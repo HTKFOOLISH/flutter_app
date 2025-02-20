@@ -1,29 +1,14 @@
-class User{
-  // TODO: Attribute declaration (Khỏi tạo các thuộc tính của class)
-  // todo: Public variables
-  int id;
-  String name;
-  // todo: Private variables
-  String _password;
+import 'package:beginer_tutorial/model/person.dart';
 
-  // TODO: Constructor (hàm khởi tạo)
-  User(this.id, this.name, this._password);
+class User extends Person{
+  String user_id;
+  String user_name;
 
-  // TODO: Getter and Setter
-  // No Getter => can't print
-  // No Setter => can't change
-  String get password => _password;
+  User(this.user_id, this.user_name) : super(18, 'Kim', 'female', '1234321');
 
-  set password(String value) {
-    _password = value;
-  }
-
-  // TODO: Display info using toString
   @override
   String toString() {
     // TODO: implement toString
-    // Check admin
-    return (name == 'admin') ?
-    '$id - $name - $_password' : '$id - $name';
+    return '$user_id - $user_name - ${super.to_string()}';
   }
 }

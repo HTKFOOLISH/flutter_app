@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:beginer_tutorial/model/user.dart';
 
 void main() {
+  /*
   User user_0 = User(0, 'admin', '123');
   // user_0.name = 'HTK';
   user_0.id   = 1;
@@ -10,6 +11,11 @@ void main() {
   print(user_0.toString());
 
   print(user_0.password); // Use Setter to print password.
+   */
+
+  User user_0 = User('KimCang_1718', 'Kim LA');
+  print(user_0.toString());
+  print(user_0.to_string());
 
   // runApp(const MyApp());
 }
